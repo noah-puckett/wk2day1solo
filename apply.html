@@ -5,9 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Apply!</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./src/main.css">
 </head>
 <body>
+    <h1>Please enter your dog's info below:</h1>
     <!--MAIN FORUM GOES HERE-->
+    <main>
+        <form id="application">
+
+            <section>
+                <fieldset>
+                <legend>Basics</legend>
+                <p>
+                <label for="name">Name: </label>
+                <input required type="text" name="name" id="name">
+                </p>
+                <p>
+                <label for="age">Age: </label>
+                <input type="number" name="age" id="age">
+                </p>
+                </fieldset>
+            </section>
+
+            <section>
+                <h2>Specifics</h2>
+                <fieldset>
+                    <legend>
+                        Temperament, Color, Goodness, Favorite Activities
+                    </legend>
+                    
+                    <section>
+                    <p>
+                    <label for="temperament">
+                        <h3>Please choose their temperament below</h3>
+                    </label>
+                    <p>
+                    <select name="temperament" id="temperament">
+                        <option value="" hidden disabled selected>select</option>
+                        <option value="calm">calm</option>
+                        <option value="rowdy">rowdy</option>
+                        <option value="hissing">hissing</option>
+                        <option value="screaming">screaming</option>
+                    </select>
+                    </p>
+                    </section>
+                    </p>
+
+                    <p>
+                        <h3>Select your dog's color(s)</h3>
+                    </p>
+                    <section>
+                    <div>
+                        <input type="checkbox" name="colors" value="brown" id="brown">
+                        <label for="brown">brown</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="colors" value="green" id="green">
+                        <label for="green">green</label>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" name="colors" value="white" id="white">
+                        <label for="white">white</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="colors" value="gray" id="gray">
+                        <label for="gray">gray</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="colors" value="black" id="black">
+                        <label for="black">black</label>
+                    </div>
+                    </section>
+
+                    <h3>
+                        Are they a good dog?
+                    </h3>
+                    <section>
+                        <input required type="radio" name="good-dog" value="yes" id="yes">
+                        <label for="yes">yes</label>
+
+                        <input required type="radio" name="good-dog" value="yes-caps" id="yes-caps">
+                        <label for="yes-caps">YES</label>
+                    </section>
+                    
+                    <h3>
+                        What is their favorite activity?
+                    </h3>
+                    <section>
+                        <p>
+                            <label for="fave-activity"></label>
+                            <textarea name="fave-activity" id="fave-activity"></textarea>
+                        </p>
+                    </section>
+
+                </fieldset>
+            </section>
+
+            <h3>
+                Click below to submit
+            </h3>
+            <button>Submit</button>
+        </form>
+    </main>
+    <script src="./src/"></script>
 </body>
 </html>
