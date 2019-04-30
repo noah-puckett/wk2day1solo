@@ -7,7 +7,7 @@ test('time to test a function', function(assert) {
     //create object literal
     const expected = {
         name: 'longboi',
-        age: '5', 
+        age: 5, 
         temperament: 'hissing',
         colors: ['brown', 'green'],
         goodDog: 'yes-caps',
@@ -30,5 +30,6 @@ test('time to test a function', function(assert) {
     // Call the function you're testing and set the result to a const
     const dog = getDog(formData);
     //Assert
+    //deepEqual is checking ===, not ==
     assert.deepEqual(dog, expected);
 });
