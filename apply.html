@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="./src/main.css">
 </head>
 <body>
-    <h1>Please enter your dog's info below:</h1>
+    <h1 id="dog-info">Please enter your dog's info below:</h1>
     <!--MAIN FORUM GOES HERE-->
     <main>
         <form id="application">
 
             <section>
-                <fieldset>
+                <fieldset class="fieldset">
                 <legend>Basics</legend>
                 <p>
                 <label for="name">Name: </label>
@@ -29,7 +29,7 @@
 
             <section>
                 <h2>Specifics</h2>
-                <fieldset>
+                <fieldset class="fieldset">
                     <legend>
                         Temperament, Color, Goodness, Favorite Activities
                     </legend>
@@ -105,12 +105,12 @@
                 </fieldset>
             </section>
 
-            <h3>
+            <h2>
                 Click below to submit
-            </h3>
-            <button>Submit</button>
+            </h2>
+            <button id="button">Submit</button>
         </form>
     </main>
-    <script src="./src/"></script>
+    <script src="./src/apply.js"></script>
 </body>
 </html>
