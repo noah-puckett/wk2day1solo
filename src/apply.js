@@ -1,4 +1,5 @@
 import getDog from './getDog.js';
+import roundtripDog from './roundtripDog.js';
 
 //get forum element
 const form = document.getElementById('application');
@@ -9,5 +10,5 @@ form.addEventListener('submit', (event) => {
 
     const formData = new FormData(form);
     const dog = getDog(formData);
-    console.log(dog);
+    roundtripDog.saveMethod(dog);
 });
