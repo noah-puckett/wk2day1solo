@@ -11,4 +11,5 @@ form.addEventListener('submit', (event) => {
     const formData = new FormData(form);
     const dog = getDog(formData);
     roundtripDog.saveMethod(dog);
+    //const dog = roundtripDog.getMethod(formData);
 });

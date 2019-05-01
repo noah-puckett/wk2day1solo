@@ -3,6 +3,10 @@ body {
     background-color: rgb(119, 119, 119);  
 }
 
+#listbody {
+    text-align: left;
+}
+
 h1, h2, h3, h4 {
     color: chartreuse;
 }
@@ -37,4 +41,14 @@ img {
     background-color: rgb(253, 124, 189);
     color: chartreuse;
     font-size: 1.5em;
+}
+
+dt {
+    color: chartreuse;
+    font-size: 1.8em;
+}
+
+dd {
+    color: rgb(253, 124, 189);
+    font-size: 1.2em;
 }
