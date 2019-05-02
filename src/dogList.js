@@ -17,4 +17,7 @@ age.textContent = dog.age;
 temperament.textContent = dog.temperament;
 colors.textContent = dog.colors;
 goodDog.textContent = dog.goodDog;
+if(dog.goodDog === 'yes-caps') {
+    dog.goodDog = 'YES';
+}
 faveActivity.textContent = dog.faveActivity;
