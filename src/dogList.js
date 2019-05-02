@@ -13,7 +13,6 @@ const dog = roundtripDog.getMethod();
 
 //populate the DOM elements with the corresponding properties, Marty's code say "mediate data into the elements"
 name.textContent = dog.name;
-console.log(dog);
 age.textContent = dog.age;
 temperament.textContent = dog.temperament;
 colors.textContent = dog.colors;
