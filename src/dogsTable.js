@@ -6,11 +6,33 @@ const dogs = roundtripDog.getAllMethod();
 
 for(let i = 0; i < dogs.length; i++) {
     const dog = dogs[i];
-
+    
+    //input: DOG
     const tr = document.createElement('tr');
-
+    
+    //create the table cell
     const nameCell = document.createElement('td');
-    nameCell.textContent = dog.name;
+    
+    //create the anchor link <a>
+    const link = document.createElement('a');
+
+    //RIGHT TO LEFT: initialize a new INSTANCE (construct?) and store it in a VARIABLE
+    const searchParams = new URLSearchParams();
+
+    //set the name KEY with the dog NAME as the VALUE
+    searchParams.set('id', dog.name);
+
+    //use the FORMATTED SEARCH STRING as the END of the LINK href
+    //that goes to the detail page
+    link.href = 'dog-list.html?' + searchParams.toString();
+
+    //use the dog's name as the display text for the link
+    link.textContent = dog.name;
+
+    //append a child element (<a>) onto nameCell
+    nameCell.appendChild(link);
+
+    //append nameCell to the table row
     tr.appendChild(nameCell);
 
     const ageCell = document.createElement('td');

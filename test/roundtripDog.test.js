@@ -11,22 +11,17 @@ test('roundtripDog success', (assert) => {
     testStorage.removeItem('dogs');
     //Arrange
     //create object literal
-    const dog = {
-        name: 'longboi',
-        age: 5, 
-        temperament: 'hissing',
-        colors: ['brown', 'green'],
-        goodDog: 'yes-caps',
-        faveActivity: 'falling'
-    };
+    const dog1 = { name: 'tester1' };
+    const dog2 = { name: 'tester2' };
 
     //Act
-    roundtripDog.saveMethod(dog);
-    const result = roundtripDog.getMethod();
+    roundtripDog.saveMethod(dog1);
+    roundtripDog.saveMethod(dog2);
+    const result = roundtripDog.getMethod(dog2.name);
 
     //Assert
     //deepEqual is checking ===, not ==
-    assert.deepEqual(result, dog);
+    assert.deepEqual(result, dog2);
 });
 
 test('no dogs in local storage returns empty array', (assert) => {
