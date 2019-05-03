@@ -9,22 +9,20 @@ const goodDog = document.getElementById('good-dog'); //same thing here, differen
 const faveActivity = document.getElementById('fave-activity');
 
 
-
 //get the dog's name
 const searchParams = new URLSearchParams(window.location.search);
 const id = searchParams.get('id');
 
-
 //getMETHOD the applicant data from the API object
 const dog = roundtripDog.getMethod(id);
-
+console.log(dog.goodDog);
 //populate the DOM elements with the corresponding properties, Marty's code say "mediate data into the elements"
 name.textContent = dog.name;
 age.textContent = dog.age;
 temperament.textContent = dog.temperament;
 colors.textContent = dog.colors;
-goodDog.textContent = dog.goodDog;
+//goodDog.textContent = dog.goodDog;
 if(dog.goodDog === 'yes-caps') {
-    dog.goodDog = 'YES';
+    goodDog.textContent = 'YES';
 }
 faveActivity.textContent = dog.faveActivity;

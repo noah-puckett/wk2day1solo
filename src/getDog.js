@@ -1,7 +1,6 @@
 function getDog(formData) {
     //convert data to variables
     const age = parseInt(formData.get('age'));
-
     const dog = {
         name: formData.get('name'),
         age: age,
