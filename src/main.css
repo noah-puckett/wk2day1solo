@@ -1,0 +1,40 @@
+body {
+    text-align: center;
+    background-color: rgb(119, 119, 119);  
+}
+
+h1, h2, h3, h4 {
+    color: chartreuse;
+}
+
+#embiggen {
+    text-decoration: none;
+    color: chartreuse;
+    font-size: 2em;
+}
+
+#dog-info {
+    color: chartreuse;
+}
+
+.fieldset {
+    font-size: 1.1em;
+    font-weight: 700;
+    border-color: chartreuse;
+    color: rgb(253, 124, 189);
+}
+
+#describe-dog {
+    color: rgb(253, 124, 189);
+}
+
+img {
+    height: 300px;
+    width: auto;
+}
+
+#button {
+    background-color: rgb(253, 124, 189);
+    color: chartreuse;
+    font-size: 1.5em;
+}
