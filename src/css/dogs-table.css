@@ -1,0 +1,22 @@
+
+table {
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+    border-collapse: collapse;
+    border-spacing:5em;
+}
+
+thead {
+    font-weight: bolder;
+    color: #D5BDAE;
+    background: #4F4951;
+}
+
+tbody tr:nth-child(even) {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+td {
+    padding: 8px 5px;
+}
