@@ -46,7 +46,6 @@ for(let i = 0; i < dogs.length; i++) {
     //colors is an array
     const colorsCell = document.createElement('td');
     let colorsList = '';
-    console.log(dog.colors);
     if(dog.colors) {
         colorsList = dog.colors.join(', ');
     }

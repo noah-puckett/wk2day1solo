@@ -8,21 +8,25 @@ const colors = document.getElementById('colors'); //I'm not getting the id, I'm 
 const goodDog = document.getElementById('good-dog'); //same thing here, different id values, using name
 const faveActivity = document.getElementById('fave-activity');
 
-
 //get the dog's name
 const searchParams = new URLSearchParams(window.location.search);
 const id = searchParams.get('id');
 
 //getMETHOD the applicant data from the API object
 const dog = roundtripDog.getMethod(id);
-console.log(dog.goodDog);
+
 //populate the DOM elements with the corresponding properties, Marty's code say "mediate data into the elements"
 name.textContent = dog.name;
 age.textContent = dog.age;
 temperament.textContent = dog.temperament;
-colors.textContent = dog.colors;
-//goodDog.textContent = dog.goodDog;
+let colorsList = '';
+if(dog.colors) {
+    colorsList = dog.colors.join(', ');
+}
+colors.textContent = colorsList;
 if(dog.goodDog === 'yes-caps') {
     goodDog.textContent = 'YES';
+} else {
+    goodDog.textContent = 'yes';
 }
 faveActivity.textContent = dog.faveActivity;
