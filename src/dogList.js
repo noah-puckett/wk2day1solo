@@ -8,7 +8,8 @@ const colors = document.getElementById('colors'); //I'm not getting the id, I'm 
 const goodDog = document.getElementById('good-dog'); //same thing here, different id values, using name
 const faveActivity = document.getElementById('fave-activity');
 
-//get the dog's name
+//TODO: figure this out one day.
+//not entirely sure what is happening here, honestly. 
 const searchParams = new URLSearchParams(window.location.search);
 const id = searchParams.get('id');
 

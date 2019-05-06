@@ -12,17 +12,9 @@ const roundtripDog = {
         roundtripDog.storage.setItem('dogs', json);
         
     },
-    
-    // getMethod() {
-    //     //RIGHT TO LEFT: store our ARRAY OBJECT and save it in a variable (dogs)?
-    //     const dogs = roundtripDog.getAllMethod();
-    //     //RIGHT TO LEFT: give JSON's parse METHOD localStorage's STRING (json) and SAVE it in a VARIABLE (dog)
-    //     //return our ARRAY INDEX'S FIRST ITEM ([0])
-    //     return dogs[0];
-        
-    // },
 
     getMethod(name) {
+        //RIGHT TO LEFT: store our ARRAY OBJECT and save it in a variable (dogs)?
         const dogs = roundtripDog.getAllMethod();
 
         for(let i = 0; i < dogs.length; i++) {

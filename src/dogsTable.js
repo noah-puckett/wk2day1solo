@@ -7,16 +7,16 @@ const dogs = roundtripDog.getAllMethod();
 for(let i = 0; i < dogs.length; i++) {
     const dog = dogs[i];
     
-    //input: DOG
+    //store the HTML element (tr or TABLE ROW) in a VARIABLE
     const tr = document.createElement('tr');
     
-    //create the table cell
+    //store the HTML element (td or TABLE DATA, which is a CHILD element of tr)
     const nameCell = document.createElement('td');
     
     //create the anchor link <a>
     const link = document.createElement('a');
 
-    //RIGHT TO LEFT: initialize a new INSTANCE (construct?) and store it in a VARIABLE
+    //RIGHT TO LEFT: initialize a new INSTANCE and store it in a VARIABLE
     const searchParams = new URLSearchParams();
 
     //set the name KEY with the dog NAME as the VALUE
