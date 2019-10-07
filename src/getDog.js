@@ -1,7 +1,6 @@
 function getDog(formData) {
-    //convert data to variables
+    //populate our object (a dog) with form data (user input for our apply HTML page) 
     const age = parseInt(formData.get('age'));
-
     const dog = {
         name: formData.get('name'),
         age: age,

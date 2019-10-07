@@ -16,8 +16,9 @@ test('getDog success', function(assert) {
     };
 
     // Set up your parameters and expectations
-    //create an INSTANCE (object) of built-in FormData CLASS.
+    //create an INSTANCE of our FORMDATA OBJECT, save it in a variable
     const formData = new FormData();
+    //SET the KEY:VALUE pairs of our form OBJECT
     formData.set('name', expected.name);
     formData.set('age', expected.age);
     formData.set('temperament', expected.temperament);
